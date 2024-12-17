@@ -1,14 +1,22 @@
+"use client";
+
 import { Background } from "@/components/ui/background";
 import { Button } from "@/components/ui/button";
-import { SiGithub } from "react-icons/si";
+import {SiDiscord, SiGithub} from "react-icons/si";
+import { motion } from "framer-motion";
 
-export default function Introduction() {
+export default function About() {
   return (
     <section
-      id="introduction"
+      id="about"
       className="relative min-h-screen flex items-center px-4 md:px-6 lg:px-8 overflow-hidden"
     >
-      <div className="relative z-10 max-w-5xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        className="relative z-10 max-w-5xl mx-auto"
+      >
         <h2 className="text-xl md:text-2xl lg:text-2xl font-bold mb-4">
           Full stack developer
         </h2>
@@ -21,7 +29,12 @@ export default function Introduction() {
           problem-solver and team player, I bring efficiency and collaboration
           to every project.
         </p>
-        <div className="flex gap-3 mt-8">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="flex gap-4 mt-8"
+        >
           <Button variant="ghost" size="icon" asChild>
             <a
               href="https://myuser.lol/isaacx"
@@ -50,8 +63,18 @@ export default function Introduction() {
               <SiGithub className="h-5 w-5" />
             </a>
           </Button>
-        </div>
-      </div>
+          <Button variant="ghost" size="icon" asChild>
+            <a
+                href="https://discord.com/users/1149456230880915546"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+            >
+              <SiDiscord className="h-5 w-5" />
+            </a>
+          </Button>
+        </motion.div>
+      </motion.div>
       <Background className="absolute top-0 right-0 w-1/2 h-full opacity-20" />
     </section>
   );
