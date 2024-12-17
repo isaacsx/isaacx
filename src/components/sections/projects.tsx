@@ -23,7 +23,7 @@ const projects = [
     description: "A bot with many features and customizable settings, all managed through an intuitive dashboard.",
     image: "/pixel.png",
     tags: ["Sapphire", "TypeScript", "PostgreSQL"],
-    demo: "https://pxlbot.verce.app",
+    demo: "https://pxlbot.vercel.app",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Projects() {
           Projects
         </h2>
         <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-20"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 max-w-7xl mx-auto mb-20"
         >
           {projects.map((project, i) => (
               <div

@@ -5,14 +5,13 @@ import {
   SiTypescript,
   SiJavascript,
   SiReact,
-  SiVuedotjs,
   SiHtml5,
   SiCss3,
   SiNextdotjs,
   SiTailwindcss,
   SiFigma,
   SiPrisma,
-  SiDotnet,
+  SiDotnet, SiMongodb,
 } from "react-icons/si";
 
 import {
@@ -29,7 +28,7 @@ const SKILLS = [
   { icon: SiJavascript, name: "JavaScript" },
   { icon: SiDotnet, name: ".NET" },
   { icon: SiReact, name: "React" },
-  { icon: SiVuedotjs, name: "Vue.js" },
+  { icon: SiMongodb, name: "MongoDB" },
   { icon: SiPrisma, name: "Prisma" },
   { icon: SiFigma, name: "Figma" },
   { icon: SiHtml5, name: "HTML5" },

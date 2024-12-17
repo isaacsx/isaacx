@@ -39,7 +39,7 @@ export function Background({ className = "" }: { className?: string }) {
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       dots.forEach((dot) => {
-        dot.opacity = Math.sin(Date.now() * 0.001 + dot.x + dot.y) * 0.5 + 0.5;
+        dot.opacity = Math.sin(Date.now() * 0.004 + dot.x + dot.y) * 0.5 + 0.5;
         ctx.fillStyle = `rgba(59, 130, 246, ${dot.opacity})`;
         ctx.beginPath();
         ctx.arc(dot.x, dot.y, 2, 0, Math.PI * 2);

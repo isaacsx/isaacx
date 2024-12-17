@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const navItems = [
-    { name: 'Introduction', href: '#introduction' },
+    { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
 ]
 
 export function Navbar() {
-    const [activeSection, setActiveSection] = useState('');
+    const [activeSection, setActiveSection] = useState('about');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,7 +29,6 @@ export function Navbar() {
             });
         };
 
-        handleScroll();
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
