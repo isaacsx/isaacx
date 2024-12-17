@@ -16,7 +16,7 @@ const projects = [
     image: "/coderizz.png",
     tags: ["Next.js", "TypeScript", "AI"],
     github: "https://github.com/EddyerDevv/CodeRizz",
-    demo: "https://coderizz.vercel.app.com",
+    demo: "https://coderizz.vercel.app",
   },
   {
     title: "Pixel Bot",
