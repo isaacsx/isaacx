@@ -30,7 +30,7 @@ const projects = [
 export default function Projects() {
   return (
       <section id="projects">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-center">
           Projects
         </h2>
         <div
