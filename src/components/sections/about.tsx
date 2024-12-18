@@ -75,7 +75,7 @@ export default function About() {
           </Button>
         </motion.div>
       </motion.div>
-      <Background className="absolute top-0 right-0 w-1/2 h-full opacity-20" />
+      <Background className="absolute top-0 right-0 w-1/2 h-full opacity-30" />
     </section>
   );
 }
