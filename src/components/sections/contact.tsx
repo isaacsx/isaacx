@@ -30,7 +30,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="flex flex-col items-center">
             <Mail className="w-8 h-8 text-blue-400 mb-2" />
-            <p className="text-gray-300">contact@isaacx.me</p>
+            <p className="text-gray-300">isaacx@optimistic.ink</p>
           </div>
           <div className="flex flex-col items-center">
             <SiWhatsapp className="w-8 h-8 text-blue-400 mb-2" />
@@ -43,7 +43,7 @@ export default function Contact() {
         </div>
 
         <Button size="lg" className="px-8 py-6 text-lg">
-          <Link href="mailto:contact@isaacx.me">Get in Touch</Link>
+          <Link href="mailto:isaacx@optimistic.ink">Get in Touch</Link>
         </Button>
       </motion.div>
     </motion.div>
